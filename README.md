@@ -1,5 +1,6 @@
 # PAN-CARD-DETECTION-PROJECT
  The purpose of this project is to detect tampering of PAN card using computer vision. This project will help different organization in detecting whether the Id i.e. the PAN card provided to them by thier employees or customers or anyone is original or not.
+ 
  # import the necessary packages
 from skimage.metrics import structural_similarity
 import imutils
@@ -12,7 +13,8 @@ import requests
 
 # Open image and display
 original = Image.open(requests.get('https://www.thestatesman.com/wp-content/uploads/2019/07/pan-card.jpg', stream=True).raw)
-tampered = Image.open(requests.get('https://assets1.cleartax-cdn.com/s/img/20170526124335/Pan4.png', stream=True).raw) 
+
+tampered=Image.open(requests.get('https://assets1.cleartax-cdn.com/s/img/20170526124335/Pan4.png', stream=True).raw) 
 
 # The file format of the source file.
 print("Original image format : ",original.format) 
