@@ -19,10 +19,12 @@ tampered=Image.open(requests.get('https://assets1.cleartax-cdn.com/s/img/2017052
 
 # The file format of the source file.
 print("Original image format : ",original.format) 
+
 print("Tampered image format : ",tampered.format)
 
 # Image size, in pixels. The size is given as a 2-tuple (width, height).
 print("Original image size : ",original.size) 
+
 print("Tampered image size : ",tampered.size) 
 
 Converting the format of tampered image similar to original image
