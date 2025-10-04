@@ -30,10 +30,16 @@ print("Tampered image size : ",tampered.size)
 Converting the format of tampered image similar to original image
 # Resize Image
 original = original.resize((250, 160))
+
 print(original.size)
-original.save('pan_card_tampering/image/original.png')#Save image
+
+original.save('pan_card_tampering/image/original.png')
+
+#Save image
 tampered = tampered.resize((250,160))
+
 print(tampered.size)
+
 tampered.save('pan_card_tampering/image/tampered.png')#Saves image
 
 Here, we checked the format and size of the original and tampered image.
